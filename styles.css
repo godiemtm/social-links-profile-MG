@@ -1,24 +1,24 @@
-
 body {
-    
+    font-family: inter;
 }
 
 .container {
-    background-color: darkgrey;
+    background-color: hsl(0, 0%, 8%);;
     border-radius: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .profile_container {
+    padding: 2%;
     width: 20%;
-    background-color: darkcyan;
+    background-color: hsl(0, 0%, 12%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 8px;
 }
 .img_container {
     display: flex;
@@ -28,7 +28,37 @@ body {
 .img_container img {
     border-radius: 50%;
 }
-
 .footnote h2, p{
     text-align: center;
 }
+.footnote h2 {
+    color: hsl(0, 0%, 100%);
+}
+.footnote p {
+    color: hsl(75, 94%, 57%);
+}
+.tagline p {
+    color: hsl(0, 0%, 100%);
+}
+.social_link {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    text-align: center;
+    padding: 4%;
+    border-radius: 5px;
+    margin: 3%;
+    font-size: small;
+    font-weight: bold;
+}
+.social_link:hover {
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
+    cursor: url("assets/images/pointer_small.png"), auto;
+}
+
+@media only screen and (max-width: 780px) {
+    .profile_container {
+      width: auto;
+    }
+  }
